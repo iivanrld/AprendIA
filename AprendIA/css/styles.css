@@ -1,0 +1,320 @@
+:root {
+    --primary-color: #E91E63;
+    --background-color: #FFFFFF;
+    --text-primary-color: #000000;
+    --text-secondary-color: #6C757D;
+    --input-border-color: #CED4DA;
+}
+
+.admin-logo {
+    height: 35px;
+    margin-right: 10px;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif;
+    color: var(--text-primary-color);
+}
+
+.navbar {
+    background-color: var(--background-color);
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-primary-color);
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 400px;
+    padding-top: 60px; /* Add space from the top navbar */
+    padding-bottom: 30px; /* Add some bottom padding */
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.form-control {
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.25);
+}
+
+.form-check-input {
+    border-color: var(--input-border-color);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.stats-card {
+    background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%);
+    color: white;
+}
+
+.stats-icon {
+    font-size: 2.5rem;
+    opacity: 0.7;
+}
+
+.text-muted {
+    color: var(--text-secondary-color) !important;
+}
+
+.back-link {
+    color: var(--text-primary-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.register-link, .login-link {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.forgot-password {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: none;
+}
+
+h1, h2 {
+    color: var(--text-primary-color);
+    font-weight: bold;
+}
+
+.vh-75 {
+    min-height: 75vh;
+    display: flex;
+    align-items: flex-start; /* Align content to the top */
+    justify-content: center;
+}
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/*estilo para tabla*/
+
+.tabla-usuarios {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.tabla-usuarios th {
+    background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tabla-usuarios td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 12px;
+}
+
+.tabla-usuarios tr:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.table-wrapper {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+/*Botones*/
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary_simple {
+
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #D81B60;
+    border-color: #D81B60;
+}
+
+.btn-warning, .btn-danger {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: #000;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #218838; 
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-outline-primary {
+    border-radius: 20px;
+}
+
+.btn-primary {
+    border-radius: 20px;
+    background-color: #f72585;
+    border-color: #f72585;
+}
+
+.btn-primary:hover {
+    background-color: #d61e73;
+    border-color: #d61e73;
+}
+
+/*fromularios*/
+
+.formulario {
+    background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%) !important;
+    color: white;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+        padding-top: 30px; /* Reduce top padding on smaller screens */
+    }
+}
+
+/* Registration and Login Card Specific Styles */
+.registration-card,
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Logo Positioning and Animation Styles */
+.login-logo,
+.registration-logo {
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+/* Hover and Interaction Effects */
+.login-logo:hover,
+.registration-logo:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Entrance Animation */
+@keyframes logoFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-logo,
+.registration-logo {
+    animation: logoFadeIn 0.7s ease-out;
+}
+
+/* Subtle Pulse Effect */
+@keyframes logoPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.login-logo,
+.registration-logo {
+    animation: 
+        logoFadeIn 0.7s ease-out,
+        logoPulse 3s infinite 1s;
+}
